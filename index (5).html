@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PlayStation 5 | النسخة الرسمية بقرص Blu-ray - سوني</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Cairo:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: { tajawal: ['Tajawal','sans-serif'], cairo: ['Cairo','sans-serif'] },
+      colors: {
+        psblue: '#0070CC',
+        psdark: '#070B18',
+        pscard: '#111827',
+        psaccent: '#00D4FF'
+      }
+    }
+  }
+}
+</script>
+<style>
+*{font-family:'Tajawal',sans-serif}
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-thumb{background:#0070CC;border-radius:10px}
+.glass{background:rgba(255,255,255,0.06);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,0.08)}
+.shine{position:relative;overflow:hidden}
+.shine::after{content:'';position:absolute;top:0;left:-100%;width:50%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.2),transparent);transition:0.6s}
+.shine:hover::after{left:100%}
+@keyframes pulse-glow{0%,100%{box-shadow:0 0 20px rgba(0,112,204,0.4)}50%{box-shadow:0 0 35px rgba(0,112,204,0.7)}}
+.pulse-glow{animation:pulse-glow 2s infinite}
+</style>
+</head>
+<body class="bg-[#070B18] text-white overflow-x-hidden">
+<!-- Top Bar -->
+<div class="bg-gradient-to-r from-[#0070CC] to-[#00A8E8] text-white text-center py-2.5 text-[13px] font-bold tracking-wide">
+  <span class="inline-flex items-center gap-2"><i class="fa-solid fa-bolt"></i> عرض حصري لفترة محدودة - توصيل مجاني لجميع المحافظات <span class="hidden md:inline bg-white text-[#0070CC] px-2 py-0.5 rounded-full text-xs mr-2">ينتهي قريباً</span></span>
+</div>
+
+<!-- Navbar -->
+<nav class="sticky top-0 z-40 bg-[#070B18]/80 backdrop-blur-xl border-b border-white/10">
+  <div class="max-w-[1280px] mx-auto px-4 lg:px-8 h-[68px] flex items-center justify-between">
+    <div class="flex items-center gap-8">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
+          <span class="font-black text-[#0070CC] text-xl leading-none" style="font-family:Cairo">PS</span>
+        </div>
+        <div>
+          <p class="font-black text-[15px] leading-none">PlayStation<span class="text-[#0070CC]"> 5</span></p>
+          <p class="text-[11px] text-white/50 font-medium tracking-widest">OFFICIAL EDITION</p>
+        </div>
+      </div>
+      <div class="hidden lg:flex items-center gap-6 text-sm font-medium text-white/70">
+        <a href="#features" class="hover:text-white transition">المميزات</a>
+        <a href="#specs" class="hover:text-white transition">المواصفات</a>
+        <a href="#reviews" class="hover:text-white transition">آراء العملاء</a>
+        <a href="#faq" class="hover:text-white transition">الأسئلة الشائعة</a>
+      </div>
+    </div>
+    <div class="flex items-center gap-3">
+      <span class="hidden md:inline-flex items-center gap-2 text-xs bg-[#1A2332] border border-white/10 px-3 py-1.5 rounded-full">
+        <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span> متوفر الآن
+      </span>
+      <a href="tel:01226949296" class="hidden md:inline-flex items-center gap-2 bg-white text-[#070B18] px-5 py-2.5 rounded-full font-bold text-sm hover:bg-gray-100 transition">
+        <i class="fa-solid fa-phone text-xs"></i> 01226949296
+      </a>
+      <button id="menuBtn" class="lg:hidden w-10 h-10 rounded-full bg-white/10 flex items-center justify-center"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+  <div id="mobileMenu" class="hidden lg:hidden border-t border-white/10 bg-[#0F172A] px-4 py-4 space-y-3">
+    <a href="#features" class="block py-2">المميزات</a><a href="#specs" class="block py-2">المواصفات</a><a href="#reviews" class="block py-2">آراء العملاء</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="max-w-[1280px] mx-auto px-4 lg:px-8 py-6 lg:py-10">
+  <div class="grid lg:grid-cols-[1.15fr_0.85fr] gap-6 lg:gap-10 items-start">
+    <!-- Gallery -->
+    <div class="order-1">
+      <div class="bg-gradient-to-b from-[#0F1A2E] to-[#0B1220] rounded-[24px] border border-white/10 p-4 lg:p-6 relative overflow-hidden">
+        <div class="absolute top-4 right-4 z-10 flex gap-2">
+          <span class="bg-[#FFB800] text-[#070B18] text-xs font-black px-3 py-1.5 rounded-full flex items-center gap-1"><i class="fa-solid fa-crown text-[10px]"></i> الأفضل مبيعاً في أجهزة الألعاب</span>
+        </div>
+        <div class="absolute top-4 left-4 z-10 w-10 h-10 bg-white/10 backdrop-blur rounded-full flex items-center justify-center cursor-pointer hover:bg-white hover:text-black transition" onclick="toggleWishlist(this)">
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <!-- Main Image -->
+        <div class="relative aspect-[1.15/1] flex items-center justify-center pt-8">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0070CC]/20 via-transparent to-transparent rounded-2xl"></div>
+          <img id="mainImage" src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=700&auto=format&fit=crop&q=60" alt="PlayStation 5" class="relative w-[85%] h-[85%] object-contain drop-shadow-[0_30px_60px_rgba(0,0,0,0.6)] transition duration-500">
+          <button onclick="prevImg()" class="absolute right-2 top-1/2 -translate-y-1/2 w-9 h-9 bg-white rounded-full text-black flex items-center justify-center shadow-lg hover:scale-110 transition"><i class="fa-solid fa-chevron-right text-xs"></i></button>
+          <button onclick="nextImg()" class="absolute left-2 top-1/2 -translate-y-1/2 w-9 h-9 bg-white rounded-full text-black flex items-center justify-center shadow-lg hover:scale-110 transition"><i class="fa-solid fa-chevron-left text-xs"></i></button>
+        </div>
+        <!-- Thumbs -->
+        <div class="grid grid-cols-4 gap-3 mt-4">
+          <button onclick="setImg(0)" class="thumb active bg-white rounded-2xl p-2 border-2 border-[#0070CC] aspect-square flex items-center justify-center"><img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=200&auto=format&fit=crop&q=60" class="w-full h-full object-contain"></button>
+          <button onclick="setImg(1)" class="thumb bg-white rounded-2xl p-2 border-2 border-transparent aspect-square flex items-center justify-center opacity-70 hover:opacity-100"><img src="https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?w=200&auto=format&fit=crop&q=60" class="w-full h-full object-contain"></button>
+          <button onclick="setImg(2)" class="thumb bg-white rounded-2xl p-2 border-2 border-transparent aspect-square flex items-center justify-center opacity-70 hover:opacity-100"><img src="https://images.unsplash.com/photo-1622297845775-5ff3fef71d13?w=200&auto=format&fit=crop&q=60" class="w-full h-full object-contain"></button>
+          <button onclick="setImg(3)" class="thumb bg-white rounded-2xl p-2 border-2 border-transparent aspect-square flex items-center justify-center opacity-70 hover:opacity-100 relative">
+            <img src="https://images.unsplash.com/photo-1607853202273-797f1c22a38e?w=200&auto=format&fit=crop&q=60" class="w-full h-full object-contain opacity-60">
+            <span class="absolute inset-0 flex items-center justify-center bg-black/40 rounded-2xl text-white font-bold text-sm">+3</span>
+          </button>
+        </div>
+        <p class="text-center text-white/40 text-xs mt-3 flex items-center justify-center gap-1"><i class="fa-solid fa-magnifying-glass-plus"></i> مرر للتكبير - اسحب لمشاهدة الزوايا</p>
+      </div>
+      <!-- Mini trust under gallery -->
+      <div class="hidden lg:grid grid-cols-3 gap-3 mt-4">
+        <div class="glass rounded-2xl p-3 flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-emerald-500/20 flex items-center justify-center text-emerald-400"><i class="fa-solid fa-truck-fast"></i></div><div><p class="text-sm font-bold">توصيل مجاني</p><p class="text-xs text-white/50">خلال 24-48 ساعة</p></div></div>
+        <div class="glass rounded-2xl p-3 flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-400"><i class="fa-solid fa-rotate-left"></i></div><div><p class="text-sm font-bold">إرجاع مجاني</p><p class="text-xs text-white/50">خلال 14 يوم</p></div></div>
+        <div class="glass rounded-2xl p-3 flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-violet-500/20 flex items-center justify-center text-violet-400"><i class="fa-solid fa-shield-halved"></i></div><div><p class="text-sm font-bold">دفع آمن 100%</p><p class="text-xs text-white/50">تقسيط حتى 24 شهر</p></div></div>
+      </div>
+    </div>
+
+    <!-- Details -->
+    <div class="order-2">
+      <div class="flex items-center gap-2 text-xs text-white/60 mb-3">
+        <span>الرئيسية</span><i class="fa-solid fa-chevron-left text-[10px]"></i><span>أجهزة الألعاب</span><i class="fa-solid fa-chevron-left text-[10px]"></i><span class="text-white">PlayStation 5</span>
+      </div>
+      <p class="text-[#00D4FF] font-bold text-xs tracking-widest mb-2">SONY • الإصدار الرسمي الجديد 2024</p>
+      <h1 class="text-[26px] lg:text-[32px] font-black leading-tight">جهاز بلاي ستيشن 5 مع نسخة قرص بلو راي <span class="text-white/60 font-bold">(موديل جديد)</span> - النسخة الرسمية</h1>
+      <div class="flex flex-wrap items-center gap-3 mt-3">
+        <div class="flex items-center gap-1.5">
+          <div class="flex text-[#FFB800] text-sm"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+          <span class="font-bold text-sm">4.5</span><span class="text-white/50 text-sm"> (4,531 تقييم)</span>
+        </div>
+        <span class="w-px h-4 bg-white/20"></span>
+        <span class="text-emerald-400 text-sm font-bold flex items-center gap-1"><i class="fa-solid fa-circle-check"></i> 8,200+ عملية شراء</span>
+        <span class="bg-white text-black text-xs font-black px-2.5 py-1 rounded-full">مضمون من سوني</span>
+      </div>
+
+      <!-- Price Card -->
+      <div class="bg-white text-[#070B18] rounded-[20px] p-5 mt-5 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#0070CC] to-[#00D4FF]"></div>
+        <div class="flex items-start justify-between">
+          <div>
+            <p class="text-xs font-bold text-black/50 tracking-widest">السعر الحالي</p>
+            <div class="flex items-baseline gap-2 mt-1">
+              <span class="text-[32px] font-black leading-none">84,975</span>
+              <span class="font-bold">جنيه مصري</span>
+              <span class="bg-[#FFE5E5] text-[#E11D48] text-xs font-black px-2 py-1 rounded-full">وفر 12%</span>
+            </div>
+            <p class="text-sm text-black/50 line-through mt-1">96,500 جنيه</p>
+          </div>
+          <div class="text-left">
+            <p class="text-xs bg-[#070B18] text-white px-3 py-1.5 rounded-full font-bold">شامل الضريبة</p>
+            <p class="text-xs text-black/60 mt-1.5 flex items-center gap-1 justify-end"><i class="fa-solid fa-credit-card"></i> قسّط حتى 24 شهر</p>
+          </div>
+        </div>
+        <!-- Scarcity -->
+        <div class="bg-[#FFF1F2] border border-[#FECDD3] rounded-xl p-3 flex items-center gap-3 mt-4">
+          <div class="w-9 h-9 bg-[#E11D48] rounded-full flex items-center justify-center text-white animate-pulse"><i class="fa-solid fa-fire text-sm"></i></div>
+          <div class="flex-1">
+            <p class="font-black text-[#E11D48] text-sm">باقي وحدة واحدة فقط في المخزون!</p>
+            <p class="text-xs text-[#9F1239]">38 شخص يشاهد هذا المنتج الآن</p>
+          </div>
+          <span class="text-[#E11D48] font-black text-xs border border-[#E11D48] px-2 py-1 rounded-full">متبقي 1</span>
+        </div>
+        <!-- Countdown -->
+        <div class="bg-[#070B18] rounded-xl p-3 mt-3 flex items-center justify-between text-white">
+          <div class="flex items-center gap-2 text-sm font-bold"><i class="fa-solid fa-stopwatch text-[#00D4FF]"></i> اطلب خلال</div>
+          <div class="flex items-center gap-1.5" id="countdown">
+            <span class="bg-white text-black font-black px-2 py-1 rounded-lg text-sm min-w-[36px] text-center" id="h">05</span><span class="font-black">:</span>
+            <span class="bg-white text-black font-black px-2 py-1 rounded-lg text-sm min-w-[36px] text-center" id="m">42</span><span class="font-black">:</span>
+            <span class="bg-[#0070CC] text-white font-black px-2 py-1 rounded-lg text-sm min-w-[36px] text-center" id="s">18</span>
+          </div>
+          <span class="text-xs text-white/60">لتحصل عليه غداً</span>
+        </div>
+      </div>
+
+      <!-- 3 Main Buttons -->
+      <div class="mt-4 space-y-3">
+        <button onclick="showToast('تمت إضافة المنتج للسلة بنجاح!')" class="shine pulse-glow w-full bg-gradient-to-r from-[#0070CC] to-[#00A8E8] text-white font-black text-[17px] py-4 rounded-full flex items-center justify-center gap-3 hover:scale-[1.01] transition">
+          <i class="fa-solid fa-bag-shopping"></i> اشتري الآن - الدفع عند الاستلام
+        </button>
+        <div class="grid grid-cols-2 gap-3">
+          <button onclick="showToast('تمت الإضافة إلى العربة')" class="shine w-full bg-white text-[#070B18] font-black py-3.5 rounded-full flex items-center justify-center gap-2 border-2 border-white hover:bg-gray-100 transition">
+            <i class="fa-solid fa-cart-plus"></i> أضف للعربة
+          </button>
+          <a href="https://wa.me/201226949296" target="_blank" class="shine w-full bg-[#25D366] text-white font-black py-3.5 rounded-full flex items-center justify-center gap-2 hover:bg-[#1DA851] transition">
+            <i class="fa-brands fa-whatsapp text-lg"></i> اطلب عبر واتساب
+          </a>
+        </div>
+        <p class="text-center text-white/50 text-xs flex items-center justify-center gap-4">
+          <span class="flex items-center gap-1"><i class="fa-solid fa-lock text-emerald-400"></i> دفع آمن</span>
+          <span class="flex items-center gap-1"><i class="fa-solid fa-truck text-blue-400"></i> شحن مجاني</span>
+          <span class="flex items-center gap-1"><i class="fa-solid fa-award text-amber-400"></i> ضمان سنتين</span>
+        </p>
+      </div>
+
+      <!-- Delivery Info -->
+      <div class="glass rounded-2xl p-4 mt-4 flex items-center gap-3">
+        <img src="https://cdn-icons-png.flaticon.com/512/3771/3771321.png" class="w-10 h-10 object-contain bg-white rounded-full p-1">
+        <div class="flex-1">
+          <p class="font-bold text-sm">توصيل سريع ومجاني <span class="text-emerald-400">• غداً قبل 9 مساءً</span></p>
+          <p class="text-xs text-white/60">القاهرة والجيزة - باقي المحافظات خلال 48 ساعة</p>
+        </div>
+        <span class="text-[#00D4FF] text-xs font-bold">تتبع شحنتك</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Trust Badges Detailed -->
+<section id="features" class="max-w-[1280px] mx-auto px-4 lg:px-8 mt-2">
+  <div class="grid md:grid-cols-3 gap-4">
+    <div class="bg-white rounded-[20px] p-5 flex gap-4 items-start text-[#070B18]">
+      <div class="w-12 h-12 rounded-2xl bg-[#E0F2FE] flex items-center justify-center text-[#0070CC] text-xl shrink-0"><i class="fa-solid fa-truck-fast"></i></div>
+      <div><h3 class="font-black">توصيل مجاني وسريع</h3><p class="text-sm text-black/60 mt-1 leading-relaxed">شحن مجاني لجميع أنحاء مصر، مع تغليف آمن ومضمون ضد الكسر.</p><span class="text-xs font-bold text-[#0070CC] mt-2 inline-block">استلم خلال 24 ساعة →</span></div>
+    </div>
+    <div class="bg-white rounded-[20px] p-5 flex gap-4 items-start text-[#070B18]">
+      <div class="w-12 h-12 rounded-2xl bg-[#DCFCE7] flex items-center justify-center text-emerald-600 text-xl shrink-0"><i class="fa-solid fa-rotate-left"></i></div>
+      <div><h3 class="font-black">إرجاع مجاني ومريح</h3><p class="text-sm text-black/60 mt-1 leading-relaxed">14 يوم إرجاع مجاني بدون أسئلة، مع استرداد كامل المبلغ.</p><span class="text-xs font-bold text-emerald-600 mt-2 inline-block">سياسة الإرجاع →</span></div>
+    </div>
+    <div class="bg-white rounded-[20px] p-5 flex gap-4 items-start text-[#070B18]">
+      <div class="w-12 h-12 rounded-2xl bg-[#F3E8FF] flex items-center justify-center text-violet-600 text-xl shrink-0"><i class="fa-solid fa-shield-halved"></i></div>
+      <div><h3 class="font-black">دفع آمن 100% وتقسيط</h3><p class="text-sm text-black/60 mt-1 leading-relaxed">مدفوعات مشفرة بالكامل، تقسيط حتى 24 شهر بدون فوائد.</p><span class="text-xs font-bold text-violet-600 mt-2 inline-block">خيارات التقسيط →</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Specs -->
+<section id="specs" class="max-w-[1280px] mx-auto px-4 lg:px-8 mt-10">
+  <div class="text-center max-w-2xl mx-auto">
+    <span class="bg-white/10 border border-white/10 text-[#00D4FF] text-xs font-black px-4 py-1.5 rounded-full">تكنولوجيا الجيل الجديد</span>
+    <h2 class="text-[28px] lg:text-[36px] font-black mt-4 leading-tight">قوة لا تُقارن. سرعة لا تُصدق. <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0070CC] to-[#00D4FF]">متعة بلا حدود.</span></h2>
+    <p class="text-white/60 mt-3">اكتشف لماذا يعتبر PS5 ثورة حقيقية في عالم الألعاب</p>
+  </div>
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+    <div class="group bg-gradient-to-b from-[#111827] to-[#0B1220] border border-white/10 rounded-[24px] p-6 hover:border-[#0070CC]/50 hover:-translate-y-1 transition duration-300">
+      <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#0070CC] to-[#00D4FF] flex items-center justify-center text-white text-xl mb-4 group-hover:scale-110 transition"><i class="fa-solid fa-compact-disc"></i></div>
+      <h3 class="font-black text-lg">Ultra HD Blu-ray™</h3><p class="text-sm text-white/60 mt-2 leading-relaxed">شغّل أقراص 4K Blu-ray واستمتع بمكتبة ألعاب فيزيائية ضخمة مع إمكانية البيع والمشاركة.</p><ul class="mt-4 space-y-1.5 text-xs text-white/80"><li class="flex gap-2"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> دعم كامل لأقراص PS5 و PS4</li><li class="flex gap-2"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> تشغيل أفلام 4K بتقنية HDR</li></ul>
+    </div>
+    <div class="group bg-gradient-to-b from-[#111827] to-[#0B1220] border border-white/10 rounded-[24px] p-6 hover:border-[#0070CC]/50 hover:-translate-y-1 transition duration-300">
+      <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-violet-600 to-fuchsia-500 flex items-center justify-center text-white text-xl mb-4 group-hover:scale-110 transition"><i class="fa-solid fa-bolt"></i></div>
+      <h3 class="font-black text-lg">SSD فائق السرعة</h3><p class="text-sm text-white/60 mt-2 leading-relaxed">تحميل الألعاب في ثوانٍ. تنقل بين العوالم بدون شاشات انتظار تقريباً.</p><ul class="mt-4 space-y-1.5 text-xs text-white/80"><li class="flex gap-2"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> سرعة 5.5GB/ثانية</li><li class="flex gap-2"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> تحميل أسرع 10 مرات من PS4</li></ul>
+    </div>
+    <div class="group bg-gradient-to-b from-[#111827] to-[#0B1220] border border-white/10 rounded-[24px] p-6 hover:border-[#0070CC]/50 hover:-translate-y-1 transition duration-300">
+      <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-500 flex items-center justify-center text-white text-xl mb-4 group-hover:scale-110 transition"><i class="fa-solid fa-display"></i></div>
+      <h3 class="font-black text-lg">جرافيكس 4K حقيقي</h3><p class="text-sm text-white/60 mt-2 leading-relaxed">دقة 4K مع تتبع الأشعة Ray Tracing ومعدل 120 إطار في الثانية.</p><ul class="mt-4 space-y-1.5 text-xs text-white/80"><li class="flex gap-2"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> دعم 8K و HDR</li><li class="flex gap-2"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> معالج AMD Zen 2 ثماني النواة</li></ul>
+    </div>
+    <div class="group bg-gradient-to-b from-[#111827] to-[#0B1220] border border-white/10 rounded-[24px] p-6 hover:border-[#0070CC]/50 hover:-translate-y-1 transition duration-300">
+      <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-orange-500 to-pink-500 flex items-center justify-center text-white text-xl mb-4 group-hover:scale-110 transition"><i class="fa-solid fa-gamepad"></i></div>
+      <h3 class="font-black text-lg">DualSense™ الثوري</h3><p class="text-sm text-white/60 mt-2 leading-relaxed">استشعر كل لحظة مع ردود الفعل اللمسية والمحفزات التكيفية.</p><ul class="mt-4 space-y-1.5 text-xs text-white/80"><li class="flex gap-2"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> اهتزازات دقيقة واقعية</li><li class="flex gap-2"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> مايكروفون مدمج ومنفذ صوت</li></ul>
+    </div>
+  </div>
+  <!-- Comparison strip -->
+  <div class="bg-white rounded-[24px] p-6 lg:p-8 mt-6 grid lg:grid-cols-[1.1fr_0.9fr] gap-8 items-center text-[#070B18]">
+    <div>
+      <span class="bg-[#070B18] text-white text-xs font-black px-3 py-1 rounded-full">لماذا النسخة بقرص؟</span>
+      <h3 class="text-2xl font-black mt-3">حرية أكبر. قيمة أعلى. استثمار أذكى.</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-5">
+        <div class="bg-[#F8FAFC] rounded-2xl p-4 border border-black/5"><p class="font-black flex gap-2"><i class="fa-solid fa-coins text-amber-500"></i> وفر أموالك</p><p class="text-sm text-black/60 mt-1">اشترِ ألعاب مستعملة بنصف السعر وبع ألعابك بعد الانتهاء</p></div>
+        <div class="bg-[#F8FAFC] rounded-2xl p-4 border border-black/5"><p class="font-black flex gap-2"><i class="fa-solid fa-box-open text-blue-500"></i> بدون إنترنت</p><p class="text-sm text-black/60 mt-1">العب مباشرة من القرص بدون انتظار تحميل ضخم</p></div>
+      </div>
+    </div>
+    <div class="bg-[#070B18] rounded-[20px] p-5 text-white relative overflow-hidden">
+      <div class="absolute -top-10 -left-10 w-40 h-40 bg-[#0070CC]/30 blur-[40px] rounded-full"></div>
+      <p class="font-black">محتويات العلبة الرسمية</p>
+      <ul class="mt-4 space-y-3 text-sm">
+        <li class="flex gap-3"><span class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-xs">01</span> جهاز PS5 نسخة الأقراص - موديل جديد أخف وأنحف</li>
+        <li class="flex gap-3"><span class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-xs">02</span> ذراع تحكم DualSense لاسلكي + كابل USB-C</li>
+        <li class="flex gap-3"><span class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-xs">03</span> قاعدة تثبيت + كابل HDMI + دليل سريع</li>
+      </ul>
+      <p class="text-xs text-white/50 mt-4 flex items-center gap-1"><i class="fa-solid fa-certificate text-[#00D4FF]"></i> ضمان سوني الرسمي لمدة عامين + ختم الاستيراد</p>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section id="reviews" class="max-w-[1280px] mx-auto px-4 lg:px-8 mt-10">
+  <div class="bg-[#0F172A] border border-white/10 rounded-[24px] p-6 lg:p-8">
+    <div class="flex flex-wrap items-center justify-between gap-4">
+      <div>
+        <h2 class="text-2xl font-black flex items-center gap-2">آراء العملاء <span class="bg-emerald-500 text-white text-xs px-2 py-1 rounded-full">موثق</span></h2>
+        <div class="flex items-center gap-2 mt-2">
+          <span class="text-3xl font-black">4.5</span><div class="flex text-[#FFB800]"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div><span class="text-white/60 text-sm">من 4,531 تقييم</span>
+        </div>
+      </div>
+      <div class="flex-1 max-w-[420px]">
+        <div class="space-y-1.5">
+          <div class="flex items-center gap-2 text-xs"><span class="w-8">5 نجوم</span><div class="flex-1 h-2 bg-white/10 rounded-full overflow-hidden"><div class="h-full bg-[#FFB800] w-[78%]"></div></div><span class="w-10 text-white/60">78%</span></div>
+          <div class="flex items-center gap-2 text-xs"><span class="w-8">4 نجوم</span><div class="flex-1 h-2 bg-white/10 rounded-full overflow-hidden"><div class="h-full bg-[#FFB800] w-[14%]"></div></div><span class="w-10 text-white/60">14%</span></div>
+          <div class="flex items-center gap-2 text-xs"><span class="w-8">3 نجوم</span><div class="flex-1 h-2 bg-white/10 rounded-full overflow-hidden"><div class="h-full bg-white/30 w-[5%]"></div></div><span class="w-10 text-white/60">5%</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="grid md:grid-cols-3 gap-4 mt-6">
+      <div class="bg-white text-[#070B18] rounded-2xl p-5">
+        <div class="flex items-center gap-3"><img src="https://i.pravatar.cc/100?img=11" class="w-10 h-10 rounded-full"><div><p class="font-bold text-sm">أحمد م.</p><p class="text-xs text-black/50">عملية شراء موثقة • القاهرة</p></div><span class="mr-auto bg-emerald-50 text-emerald-600 text-xs font-bold px-2 py-1 rounded-full">موثق ✓</span></div>
+        <div class="flex text-[#FFB800] text-xs mt-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p class="font-bold mt-2">تجربة أسطورية بكل معنى الكلمة!</p><p class="text-sm text-black/60 leading-relaxed mt-1">الجهاز وصل في نفس اليوم متغلف بشكل ممتاز، نسخة الأقراص ممتازة أوفر كثير من الديجيتال. الـ DualSense إحساسه خرافي.</p><p class="text-xs text-black/40 mt-3">منذ يومين • مفيد (42)</p>
+      </div>
+      <div class="bg-white text-[#070B18] rounded-2xl p-5">
+        <div class="flex items-center gap-3"><img src="https://i.pravatar.cc/100?img=32" class="w-10 h-10 rounded-full"><div><p class="font-bold text-sm">سارة خالد</p><p class="text-xs text-black/50">عملية شراء موثقة • الإسكندرية</p></div><span class="mr-auto bg-emerald-50 text-emerald-600 text-xs font-bold px-2 py-1 rounded-full">موثق ✓</span></div>
+        <div class="flex text-[#FFB800] text-xs mt-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+        <p class="font-bold mt-2">أفضل هدية لزوجي والاولاد</p><p class="text-sm text-black/60 leading-relaxed mt-1">خدمة عملاء رائعة ساعدوني في التقسيط، والجهاز أصلي 100% مع ضمان مختوم. أنصح الجميع بالنسخة الرسمية.</p><p class="text-xs text-black/40 mt-3">منذ 5 أيام • مفيد (28)</p>
+      </div>
+      <div class="bg-white text-[#070B18] rounded-2xl p-5">
+        <div class="flex items-center gap-3"><img src="https://i.pravatar.cc/100?img=15" class="w-10 h-10 rounded-full"><div><p class="font-bold text-sm">محمد عادل</p><p class="text-xs text-black/50">عملية شراء موثقة • المنصورة</p></div><span class="mr-auto bg-emerald-50 text-emerald-600 text-xs font-bold px-2 py-1 rounded-full">موثق ✓</span></div>
+        <div class="flex text-[#FFB800] text-xs mt-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p class="font-bold mt-2">سرعة خرافية و 4K حقيقي</p><p class="text-sm text-black/60 leading-relaxed mt-1">كنت متردد بين الديجيتال والعادي، لكن نسخة البلو راي أوفر بكتير على المدى الطويل. الجهاز الجديد أخف وصوته هادئ جداً.</p><p class="text-xs text-black/40 mt-3">منذ أسبوع • مفيد (61)</p>
+      </div>
+    </div>
+    <button class="w-full mt-4 bg-white/10 border border-white/10 py-3 rounded-full font-bold hover:bg-white hover:text-black transition">عرض جميع التقييمات (4,531)</button>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="max-w-[900px] mx-auto px-4 lg:px-8 mt-10">
+  <h2 class="text-2xl font-black text-center">أسئلة شائعة</h2>
+  <div class="mt-6 space-y-3">
+    <details open class="group bg-white text-[#070B18] rounded-2xl p-5 cursor-pointer">
+      <summary class="flex items-center justify-between font-black list-none">هل هذه النسخة الرسمية بضمان سوني؟ <span class="w-8 h-8 rounded-full bg-black text-white flex items-center justify-center group-open:rotate-180 transition"><i class="fa-solid fa-chevron-down text-xs"></i></span></summary>
+      <p class="text-sm text-black/60 leading-relaxed mt-3">نعم، الجهاز نسخة رسمية مستوردة بختم سوني وضمان الوكيل لمدة عامين ضد عيوب الصناعة، مع فاتورة ضريبية.</p>
+    </details>
+    <details class="group bg-[#0F172A] border border-white/10 rounded-2xl p-5 cursor-pointer">
+      <summary class="flex items-center justify-between font-black list-none">ما الفرق بين نسخة الأقراص والنسخة الديجيتال؟ <span class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center group-open:rotate-180 transition"><i class="fa-solid fa-chevron-down text-xs"></i></span></summary>
+      <p class="text-sm text-white/60 leading-relaxed mt-3">نسخة الأقراص تتيح لك تشغيل الأقراص الفيزيائية وبيعها وشراء المستعمل، بينما الديجيتال تعتمد على التحميل فقط. الأداء متطابق.</p>
+    </details>
+    <details class="group bg-[#0F172A] border border-white/10 rounded-2xl p-5 cursor-pointer">
+      <summary class="flex items-center justify-between font-black list-none">هل يوجد تقسيط؟ <span class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center group-open:rotate-180 transition"><i class="fa-solid fa-chevron-down text-xs"></i></span></summary>
+      <p class="text-sm text-white/60 leading-relaxed mt-3">نعم، تقسيط حتى 24 شهر عبر فاليو، أمان، وسهولة، وبنوك مختارة بدون مقدم وبدون فوائد في عروض محددة.</p>
+    </details>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="max-w-[1280px] mx-auto px-4 lg:px-8 mt-10 mb-10">
+  <div class="bg-gradient-to-r from-[#0070CC] via-[#0A84FF] to-[#00D4FF] rounded-[28px] p-6 lg:p-10 relative overflow-hidden">
+    <div class="absolute -top-20 -left-20 w-72 h-72 bg-white/20 blur-[60px] rounded-full"></div>
+    <div class="relative grid lg:grid-cols-[1.2fr_0.8fr] gap-8 items-center">
+      <div>
+        <p class="bg-white text-[#0070CC] inline-block font-black text-xs px-3 py-1 rounded-full">⚡ باقي وحدة واحدة فقط!</p>
+        <h2 class="text-[28px] lg:text-[40px] font-black leading-tight mt-3">لا تفوّت فرصة امتلاك <br>أقوى جهاز ألعاب في العالم</h2>
+        <p class="text-white/90 mt-3">اطلب الآن واحصل على توصيل مجاني + ضمان سنتين + إمكانية التقسيط المريح</p>
+        <div class="flex flex-wrap gap-3 mt-6">
+          <button onclick="showToast('تم تأكيد طلبك! سنتواصل معك خلال دقائق')" class="bg-white text-[#0070CC] font-black px-8 py-4 rounded-full flex items-center gap-2 hover:scale-105 transition"><i class="fa-solid fa-bolt"></i> اطلب الآن بـ 84,975 جنيه</button>
+          <a href="https://wa.me/201226949296" target="_blank" class="bg-[#070B18] text-white font-black px-8 py-4 rounded-full flex items-center gap-2 hover:bg-black transition"><i class="fa-brands fa-whatsapp"></i> تواصل واتساب</a>
+        </div>
+        <p class="text-xs text-white/80 mt-3 flex items-center gap-2"><i class="fa-solid fa-lock"></i> دفع آمن 100% • إرجاع مجاني 14 يوم • دعم فني 24/7</p>
+      </div>
+      <div class="hidden lg:flex justify-center">
+        <img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=500&auto=format&fit=crop&q=60" class="w-[380px] drop-shadow-[0_30px_60px_rgba(0,0,0,0.4)] rounded-3xl">
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="border-t border-white/10 py-8 text-center text-white/40 text-sm">
+  <p class="font-bold text-white">PlayStation 5 • النسخة الرسمية</p>
+  <p class="mt-1">صفحة تسويقية تعريفية للمنتج - جميع الحقوق محفوظة © 2024 • للاستفسار 01226949296</p>
+  <p class="mt-2 text-xs">هذه الصفحة تسويقية لعرض مميزات المنتج ولا تمثل متجراً إلكترونياً مستقلاً</p>
+</footer>
+
+<!-- Floating FABs -->
+<div class="fixed bottom-5 left-5 z-50 flex flex-col gap-3">
+  <a href="https://t.me/+201226949296" target="_blank" aria-label="Telegram" class="w-[56px] h-[56px] rounded-full bg-[#229ED9] flex items-center justify-center text-white shadow-[0_8px_24px_rgba(34,158,217,0.5)] hover:scale-110 transition">
+    <i class="fa-brands fa-telegram text-[26px]"></i>
+  </a>
+  <a href="https://wa.me/201226949296" target="_blank" aria-label="WhatsApp" class="w-[56px] h-[56px] rounded-full bg-[#25D366] flex items-center justify-center text-white shadow-[0_8px_24px_rgba(37,211,102,0.5)] hover:scale-110 transition relative">
+    <i class="fa-brands fa-whatsapp text-[28px]"></i>
+    <span class="absolute -top-1 -right-1 w-5 h-5 bg-red-500 rounded-full text-[11px] font-black flex items-center justify-center border-2 border-[#070B18]">1</span>
+  </a>
+</div>
+
+<!-- Toast -->
+<div id="toast" class="fixed bottom-5 right-5 lg:right-1/2 lg:translate-x-1/2 bg-white text-black px-6 py-4 rounded-2xl shadow-2xl font-bold hidden items-center gap-3 z-50">
+  <span class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center text-white"><i class="fa-solid fa-check"></i></span>
+  <span id="toastMsg">تمت الإضافة بنجاح</span>
+</div>
+
+<script>
+const imgs=[
+ "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=700&auto=format&fit=crop&q=60",
+ "https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?w=700&auto=format&fit=crop&q=60",
+ "https://images.unsplash.com/photo-1622297845775-5ff3fef71d13?w=700&auto=format&fit=crop&q=60",
+ "https://images.unsplash.com/photo-1607853202273-797f1c22a38e?w=700&auto=format&fit=crop&q=60"
+];
+let idx=0;
+function setImg(i){idx=i;document.getElementById('mainImage').src=imgs[i];document.querySelectorAll('.thumb').forEach((t,k)=>{t.classList.toggle('border-[#0070CC]',k===i);t.classList.toggle('border-transparent',k!==i);t.classList.toggle('opacity-70',k!==i);t.classList.toggle('active',k===i)})}
+function nextImg(){idx=(idx+1)%imgs.length;setImg(idx)}
+function prevImg(){idx=(idx-1+imgs.length)%imgs.length;setImg(idx)}
+document.getElementById('menuBtn').onclick=()=>document.getElementById('mobileMenu').classList.toggle('hidden');
+function showToast(m){const t=document.getElementById('toast');document.getElementById('toastMsg').textContent=m;t.classList.remove('hidden');t.classList.add('flex');setTimeout(()=>{t.classList.add('hidden');t.classList.remove('flex')},2800)}
+function toggleWishlist(el){el.classList.toggle('bg-white');el.classList.toggle('text-black');el.innerHTML=el.classList.contains('bg-white')?'<i class="fa-solid fa-heart text-red-500"></i>':'<i class="fa-regular fa-heart"></i>'}
+// countdown
+let h=5,m=42,s=18;
+setInterval(()=>{
+ if(s>0)s--;else if(m>0){m--;s=59}else if(h>0){h--;m=59;s=59}
+ document.getElementById('h').textContent=String(h).padStart(2,'0');
+ document.getElementById('m').textContent=String(m).padStart(2,'0');
+ document.getElementById('s').textContent=String(s).padStart(2,'0');
+},1000);
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{e.preventDefault();document.querySelector(a.getAttribute('href'))?.scrollIntoView({behavior:'smooth'})})})
+</script>
+</body>
+</html>
